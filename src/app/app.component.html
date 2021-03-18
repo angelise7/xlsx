@@ -1,1 +1,7 @@
-<nz-card></nz-card>
+<nz-card style="width: 800px;" [nzExtra]="extra">
+  {{sheetFormat}}
+</nz-card>
+
+<ng-template #extra>
+  <input type="file" (change)="handleFile($event)">
+</ng-template>

@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NzCardModule } from 'ng-zorro-antd/card';
+import { NzButtonModule } from 'ng-zorro-antd/button'
 
 registerLocaleData(zh);
 
@@ -26,6 +27,7 @@ registerLocaleData(zh);
     HttpClientModule,
     BrowserAnimationsModule,
     NzCardModule,
+    NzButtonModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
   bootstrap: [AppComponent]
